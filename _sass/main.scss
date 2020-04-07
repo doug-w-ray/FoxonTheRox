@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: #01979e;
+$primary-invert: #fff;
+
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";
+.hero.is-primary {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Rox-1.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.hero-body .buttons {
+	justify-content: center;
+}
+
+html {
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	background-color: #fff;
+	color: #555;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	background-color: #fff;
+	color: #555;
+}
+
+section .title {
+	font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section .container {
+	margin: 0 auto;
+}
+
+.big-icon {
+	display: block;
+    font-size: 300%;
+    color: #01979e;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+	font-size: 110%;
+	margin: 0.5em 0.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.navbar-item {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.navbar-item img {
+    max-height: 3rem;
+}
+
+.navbar.is-primary .navbar-brand > a.navbar-item:focus, .navbar.is-primary .navbar-brand > a.navbar-item:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active, 
+    .navbar.is-primary .navbar-brand .navbar-link:focus,
+    .navbar.is-primary .navbar-brand .navbar-link:hover,
+    .navbar.is-primary .navbar-brand .navbar-link.is-active {
+      background-color: #017f85;
+      color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+.navbar, .navbar-menu, .navbar-start, .navbar-end {
+    align-items: stretch;
+    display: flex;
+	}
+}
